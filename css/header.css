@@ -24,7 +24,8 @@ header {
     background-color: #f2f2f2;
 
     border-bottom: 0.1px lightgray solid;
-    
+
+    margin: 0px;  
 }
 
 img {
@@ -38,6 +39,8 @@ img {
     position: 0;
     margin: 0px;
     padding: 0px;
+    
+    pointer-events: none;
 }
 
 .list {
@@ -57,20 +60,23 @@ img {
     display: inline-block;
 
     text-transform: uppercase;
+
+    letter-spacing: 3px;
 }
 
 .list a {
     color: #6c2414;
     
-    font-family: 'Comfortaa', cursive;     
+    font-family: 'Comfortaa', cursive;
 
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 18.5px;
 }
 
 .list .items:hover {
     color: #9B5B00;
     opacity: 0.9;
+    text-shadow: gray 1px 1px 3px;
     
-    transition: 2000ms;
+    transition: 800ms;
 }
