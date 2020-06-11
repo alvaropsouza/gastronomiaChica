@@ -1,10 +1,8 @@
 * {
     list-style: none;
-    -webkit-user-select: none;
 }
 
 a {
-    text-decoration: none;
     color: #9B5B00;
 }
 
@@ -21,14 +19,14 @@ header {
 
     padding: 100px 30px 110px 30px;
 
-    background-color: #f2f2f2;
+    background-color: #e8e8e8;
 
     border-bottom: 0.1px lightgray solid;
 
     margin: 0px;  
 }
 
-img {
+header img {
     width: 300px;
     height: 120px;
 
@@ -71,6 +69,7 @@ img {
 
     font-weight: bold;
     font-size: 18.5px;
+    text-decoration: none;  
 }
 
 .list .items:hover {
@@ -79,4 +78,17 @@ img {
     text-shadow: gray 1px 1px 3px;
     
     transition: 800ms;
+}
+
+footer div {
+    background-color: #e8e8e8;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0px;
+    text-align: center;
+    color: #6c2414;
+
+    line-height: 20px;
 }
