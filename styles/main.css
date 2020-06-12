@@ -51,8 +51,11 @@ h1 {
 }
 
 .conteudo img {
+    /*object-position: cover;*/
     width: 15em;
     height: 10em;
+
+    object-fit: cover;
 
     border-radius: 3px;
 }
@@ -76,6 +79,8 @@ h1 {
     margin: 0px;
     display: flex;
 
+    padding: 40px;
+
     flex-direction: row;
 
     justify-content: center;
@@ -84,8 +89,8 @@ h1 {
 }
 
 .redes-sociais img {
-    height: 95px;
-    width: 95px;
+    height: 70px;
+    width: 70px;
 }
 
 .redes-sociais img:hover {
@@ -93,8 +98,8 @@ h1 {
 }
 
 .redes-sociais li {
-    height: 95px;
-    width: 95px;
+    height: 70px;
+    width: 70px;
 
     padding: 25px;
 }

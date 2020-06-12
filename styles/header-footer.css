@@ -9,6 +9,7 @@ a {
 body {
     padding: 0;
     margin: 0;
+    background-color: #F2F2F2;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: 100px 30px 110px 30px;
+    padding: 100px 40px 100px 60px;
 
     background-color: #e8e8e8;
 
@@ -86,9 +87,12 @@ footer div {
 }
 
 footer p {
+    font-family: 'Comfortaa', cursive;
+
     margin: 0px;
     text-align: center;
     color: #6c2414;
 
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 25px;
 }
