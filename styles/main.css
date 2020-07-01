@@ -1,4 +1,9 @@
 main {
+    display: flex;
+
+    align-items: center;
+    justify-content: left;
+
     width: 100%;
     height: auto;
 
@@ -8,56 +13,69 @@ main {
 }
 
 .posts {
+    display: flex;
+
+    flex-direction: column;
+    
     width: 70%;
     height: auto;
-    align-content: center;
+    position: relative;
 
     margin-top: 0px;
     margin: 0px auto 0px auto;
 
     padding: 20px 0px;
+
+    align-items: center;
+    justify-items: center;
 }
 
-h1 {
+.posts h1 {
     letter-spacing: 3px;
 
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     padding: 25px auto 5px auto;
-    text-align:left;
+    text-align: left;
+    
+    width: 75%;
 
     font-family: 'Roboto', sans-serif;
-
     font-weight: 500;
+    font-size: 23px;    
+    text-transform: capitalize;
     color: #6c2414;
-    border-bottom: 0.1px lightgray solid;
-
-    text-transform: uppercase;
 
     -webkit-user-select: none;
+    border-bottom: 0.1px lightgray solid;
 }
 
 .conteudo {
-    width: 100%;
+    width: 80%;
+    height: 200px;
 
-    display: inline-flex;
+    display: flex;
 
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-    vertical-align: center;
+    flex-direction: unset;
+
+    vertical-align: middle;
 
     margin: 2px;
 }
 
 .conteudo img {
     /*object-position: cover;*/
-    width: 15em;
+    width: 10em;
     height: 10em;
+
+    padding: 10px;
 
     object-fit: cover;
 
-    border-radius: 3px;
+    border-radius: 50%;
 }
 
 .conteudo img:hover {
@@ -66,20 +84,23 @@ h1 {
 
 .posts p {
     text-align: justify;
+    
     width: 70%;
     padding-left: 8px; 
     padding-right: 25px;
     
-    font-size: 23px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: #9B5B00;
 }
 
 .redes-sociais {
-    margin: 0px;
+    margin: auto;
     display: flex;
 
-    padding: 40px;
+    width: fit-content;
+
+    padding: 20px 10px;
 
     flex-direction: row;
 
@@ -89,8 +110,8 @@ h1 {
 }
 
 .redes-sociais img {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 }
 
 .redes-sociais img:hover {
@@ -101,5 +122,5 @@ h1 {
     height: 70px;
     width: 70px;
 
-    padding: 25px;
+    padding: 20px;
 }

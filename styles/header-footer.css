@@ -81,18 +81,36 @@ header img {
     transition: 800ms;
 }
 
-footer div {
+footer {
     background-color: #e8e8e8;
     padding: 20px;
+
+    height: 130px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
 }
 
 footer p {
     font-family: 'Comfortaa', cursive;
 
-    margin: 0px;
     text-align: center;
     color: #6c2414;
 
     font-size: 15px;
-    line-height: 25px;
+    line-height: 5px;
+
+    width: fit-content;
 }
