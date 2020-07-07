@@ -1,86 +1,95 @@
 main {
-    width: 100%;
-}
+    text-align: center;
 
-.categoria {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
+    width: 70%;
 
     margin: auto;
+}
+
+.titulo {
+    letter-spacing: 3px;
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 25px auto 5px auto;
+    text-align: center;
+
+    padding: 23px 23px 5px 23px;
+    margin: auto;
+    
+    width: fit-content;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 23px;    
+    text-transform: capitalize;
+    color: #6c2414;
+
+    -webkit-user-select: none;
+    border-bottom: 0.1px lightgray solid;
+}
+
+.tipo-produto {
+    margin: auto;
+
+    padding-top: 10px;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+.tipo-produto h1 {
+    cursor: pointer;
+
+    margin: 6px 9px;
+    padding: 20px;
+
+
+    border-radius: 10px;
+    background-color: #E8E8E8;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+    transition: 500ms;
+}
+
+.tipo-produto h1:hover {
+    opacity: 0.8;
+}
+
+.legenda {
+    text-transform: capitalize;
+
+    text-align: center;
+    text-transform: capitalize;
+    color: #8f3f2d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+
+    width: 200px;
+}
+
+.produto {
+    display: inline-table;
+
+    padding: 15px 0px;
+}
+
+.produto img {
+    height: 10em;
+    width: 10em;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.produto div {
+    padding: 7px;
+
+    color: #95726A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
 }
 
 .hide-element {
     display: none;
-}
-
-.tipo-produto {
-    width: 70%;
-
-    display: flex;
-
-    margin: auto;
-    padding: auto 50px;
-
-    justify-content: center;
-}
-
-.titulo {
-    display: flex;
-    
-    margin: 40px auto 14px auto;
-
-    letter-spacing: 3px;
-
-    font-family: 'Roboto', sans-serif;
-
-    font-weight: 500;
-    font-size: 23px;
-
-    color: #6c2414;
-
-    width: fit-content;
-    height: fit-content;
-
-    border-bottom: 0.1px lightgray solid;
-
-    cursor: pointer;
-}
-
-
-.sub-produto {
-    width: fit-content;
-    height: fit-content;
-
-    text-align: center;
-    align-content: center;
-
-    padding: 10px 20px 20px 20px;
-
-    
-}
-
-.sub-produto h2 {
-    letter-spacing: 3px;
-
-    font-family: 'Roboto', sans-serif;
-
-    font-weight: 500;
-    font-size: 20px;
-
-    color: #6c2414;
-}
-
-.sub-produto img {
-    border-radius: 50%;
-
-    width: 200px;
-    height: 200px;
-
-    object-fit: cover;
-}
-
-.sub-produto img:hover {
-    filter: drop-shadow(8px 8px 3px rgba(110, 110, 110, 0.4));
 }

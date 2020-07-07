@@ -83,14 +83,19 @@ header img {
 
 footer {
     background-color: #e8e8e8;
-    padding: 20px;
 
     height: 27vh;
+
+    margin-top: 20px;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 footer div {
