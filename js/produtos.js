@@ -1,31 +1,29 @@
-// TOGGLE DOS ITENS DA PÁGINA DE PRODUTOS
-const titulos = document.querySelectorAll(".tipo-produto h1");
-const categorias = document.querySelectorAll(".tipo-produto span");
+// Slide number
+var slideIndex = 1;
+showSlides(slideIndex);
 
- 
-for (let i = 0; i < titulos.length; i++) {
-    titulos[i].addEventListener('click', () => { categorias[i].classList.toggle('hide-element')
-    categorias[i].classList.add('show-element')} )       
+// Next/previous controls
+function slideMove(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 } 
-
-
-
-// CRIANDO ELEMENTOS COM JS
-// function createAppend(append1, append2, texto) {
-//     let first = document.createElement(append2);
-//     let seccond = document.createElement(append1);
-
-//     seccond.textContent = texto;
-//     first.appendChild(seccond);
-
-//     console.log(first);
-// }
-
-// console.log(createAppend(`div`, `h1`, `texto Teste`));
-
-// !=OPÇÃO PARA ADICIONAR E REMOVER CLASSES DISTINTAS AOS MESMOS ELEMENTOS
-
-
-
-
-

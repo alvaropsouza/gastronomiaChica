@@ -40,7 +40,7 @@
         </li>
 
         <li class="items">
-          <a href="/produtos.html">
+          <a href="./produtos.html">
             Produtos
           </a>
         </li>
@@ -55,73 +55,42 @@
   </header>
 
   <main>
-    <h1 class="titulo">📜 Cardápio</h1>
-    <section class="tipo-produto">
-      <h1 class="legenda">Carnes</h1>
-      <span class="hide-element">
-        <div class="produto">
-          <img src="./assets/carne.png" alt="Carne de sol desfiada">
-          <div class="legenda">Carne de sol desfiada</div>
-        </div>
+    <!-- Slides container -->
+    <div class="slides-container">
+      
+      <!-- Slide with 100% width images and adjustable height-->
+      <div class="slide fade">
+        <div class="slide-number">1 / 3</div>
+        <img src="./assets/frango.jpg" alt="Carnes">
+        <div class="slide-legend">Carnes Porcionadas</div>
+      </div>
 
-        <div class="produto">
-          <img src="./assets/frango.jpg" alt="Frango desfiado">
-          <div class="legenda">Frango desfiado</div>
-        </div>
-      </span>
-    </section>
+      <div class="slide fade">
+        <div class="slide-number">2 / 3</div>
+        <img src="./assets/sopa-abobora.jpg" alt="Sopas">
+        <div class="slide-legend">Sopas 300ml, 500ml e 1000ml</div>
+      </div>
 
-    <section class="tipo-produto">
-      <h1 class="legenda">Frutos do mar</h1>
-      <span class="hide-element">
-        <div class="produto">
-          <img src="./assets/camarao.jpg" alt="Camarão">
-          <div class="legenda">Camarão</div>
-        </div>
-      </span>
-    </section>
+      <div class="slide fade">
+        <div class="slide-number">3 / 3</div>
+        <img src="./assets/torta-chocolate.jpg" alt="Bolos e Tortas">
+        <div class="slide-legend">Bolos e Tortas</div>
+      </div>
+      
+      <!-- Previous and next buttons -->
+      <a onclick="slideMove(-1)" class="previous">&#10094;</a>
+      <a onclick="slideMove(1)" class="next">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- Slide dots below previous and next -->
+      <div class="slide-dots" style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
     
-    <section class="tipo-produto">
-      <h1 class="legenda">Sopas</h1>
-      <span class="hide-element">
-        <div class="produto">
-          <img src="./assets/sopa-abobora.jpg" alt="Sopa de abóbora">
-          <div class="legenda">Abóbora</div>
-        </div>
-
-        <div class="produto">
-          <img src="./assets/sopa-espinafre.jpg" alt="Sopa de espinafre">
-          <div class="legenda">Espinafre</div>
-        </div>
-
-        <div class="produto">
-          <img src="./assets/sopa-macaxeira.jpg" alt="Sopa de macaxeira">
-          <div class="legenda">Macaxeira</div>
-        </div>
-      </span>
-    </section>
-
-    <section class="tipo-produto">
-      <h1 class="legenda">Bolos</h1>
-      <span class="hide-element">
-        <div class="produto">
-          <img src="./assets/torta-chocolate.jpg" alt="Torta de Chocolate">
-          <div class="legenda">Chocolate</div>
-        </div>
-
-        <div class="produto">
-          <img src="./assets/bolo-de-laranja.jpg" alt="Bolo de laranja">
-          <div class="legenda">Laranja</div>
-        </div>
-
-        <div class="produto">
-          <img src="./assets/bolo-de-limao.jpg" alt="Bolo de limão">
-          <div class="legenda">Bolo de limão</div>
-        </div>
-      </span>
-    </section>
-
-
   </main>
 
   <footer>
