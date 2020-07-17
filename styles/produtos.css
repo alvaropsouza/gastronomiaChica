@@ -56,10 +56,15 @@
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  left: 50%;
+    transform: translate(-50%, 0);
+  width: fit-content;
+  margin: auto;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 
+  border-radius: 2px;
+  background-color: rgba(0,0,0,0.4);
   text-shadow: black 1px 1px 1px;
 }
 
